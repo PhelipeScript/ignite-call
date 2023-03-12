@@ -115,7 +115,7 @@ export default function TimeIntervals() {
         <MultiStep size={4} currentStep={3} />
       </Header>
 
-      <IntervalBox as="form" onClick={handleSubmit(handleSetTimeIntervals)}>
+      <IntervalBox as="form" onSubmit={handleSubmit(handleSetTimeIntervals)}>
         <IntervalsContainer>
           {fields.map((field, index) => {
             return (
